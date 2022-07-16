@@ -87,20 +87,35 @@ body {
 
 .footer {
   background-color: var(--how-it-made-section-color);
-  padding-top: 40px;
-}
-.footer .container {
-  display: block;
+  padding-top: 20px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__wrap {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer__text {
-    display: block;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    margin-bottom: 60px;
   }
 }
 
 .footer__text-top {
   display: block;
+  max-width: 232px;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -109,9 +124,25 @@ body {
   text-transform: uppercase;
   color: var(--second-rose-color);
 }
+@media screen and (min-width: 768px) {
+  .footer__text-top {
+    max-width: 340px;
+    font-size: 26px;
+    line-height: 1.1538461538;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text-top {
+    max-width: 472px;
+    font-size: 30px;
+    line-height: 1.1333333333;
+  }
+}
 
 .footer__text-bottom {
   display: block;
+  max-width: 200px;
   margin-top: 16px;
   font-family: "Titan One";
   font-style: normal;
@@ -122,12 +153,49 @@ body {
   text-transform: uppercase;
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .footer__text-bottom {
+    max-width: 320px;
+    margin-top: 12px;
+    font-size: 48px;
+    line-height: 1.1458333333;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text-bottom {
+    max-width: 477px;
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 58px;
+    line-height: 1.1379310345;
+  }
+}
+
+.contact {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    margin-bottom: 59px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    margin-top: 0px;
+    margin-bottom: 60px;
+  }
+}
+
+.contact__soc {
+  margin-bottom: 40px;
+}
 
 .contact__soc-list {
   display: flex;
-  margin-top: 40px;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .contact__soc-item {
@@ -136,6 +204,15 @@ body {
 }
 .contact__soc-item:not(:last-child) {
   margin-right: 28px;
+}
+@media screen and (min-width: 768px) {
+  .contact__soc-item {
+    width: 34px;
+    height: 34px;
+  }
+  .contact__soc-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contact__soc-link {
@@ -157,7 +234,9 @@ body {
 }
 
 .contact__tel {
-  margin-top: 40px;
+  display: block;
+  text-align: right;
+  margin-right: 0;
 }
 
 .contact__tel-text {
@@ -169,6 +248,19 @@ body {
   text-align: right;
   color: var(--second-font-color);
 }
+@media screen and (min-width: 768px) {
+  .contact__tel-text {
+    font-size: 14px;
+    line-height: 1.8571428571;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__tel-text {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
 
 .contact__tel-link {
   font-family: "DM Sans";
@@ -179,18 +271,34 @@ body {
   text-align: right;
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .contact__tel-link {
+    font-size: 14px;
+    line-height: 1.8571428571;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__tel-link {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
 
 .footer__copiright {
-  display: block;
-  border-top: 1px solid #e1e1e1;
-  min-height: 83px;
+  border-top: 1px solid var(--border-color);
   display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
   align-items: center;
 }
 
 .footer__copiright-text {
   margin-top: 16px;
+  margin-bottom: 3px;
+  width: 190px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
@@ -198,4 +306,20 @@ body {
   line-height: 1.5;
   text-align: center;
   color: #907e82;
+}
+@media screen and (min-width: 768px) {
+  .footer__copiright-text {
+    margin-top: 8px;
+    margin-bottom: 3px;
+    width: 278px;
+    font-size: 14px;
+    line-height: 1.8571428571;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__copiright-text {
+    margin-top: 7px;
+    margin-bottom: 4px;
+  }
 }/*# sourceMappingURL=index.css.map */
